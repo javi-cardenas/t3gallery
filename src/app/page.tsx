@@ -1,6 +1,6 @@
 import { db } from "~/server/db";
 
-export const runtime = "force-dynamic";
+export const dynamic = "force-dynamic";
 
 const mockUrls = [
   "https://1ct36eswbi.ufs.sh/f/vahpzbX8D2i6wscuzeWnW4LilmZ02Yp1Vo9df7cITySP3HvF",
