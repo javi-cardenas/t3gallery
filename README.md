@@ -33,7 +33,7 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 - [x] Make it deploy (vercel)
 - [x] Scaffold basic ui with mock data
 - [x] Tidy up build process
-- [ ] Actually set up a database (vercel psql)
+- [x] Actually set up a database (vercel psql)
 - [ ] Attach database to UI
 - [ ] Add authentication (w/ clerk)
 - [ ] Attach image upload
