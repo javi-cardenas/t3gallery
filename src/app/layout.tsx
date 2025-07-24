@@ -7,6 +7,7 @@ import { TopNav } from "./_components/topnav";
 import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "./api/uploadthing/core";
+import { PostHogProvider } from "./_analytics/provider";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -24,6 +25,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <ClerkProvider>
+      <PostHogProvider>
       <html lang="en" className={`${geist.variable}`}>
       <NextSSRPlugin
             /**
@@ -39,6 +41,7 @@ export default function RootLayout({
           {children}
         </body>
       </html>
+      </PostHogProvider>
     </ClerkProvider>
   );
 }
